@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Justine Thebault - Designer graphique et développeuse web freelance. Création de logos, chartes graphiques, sites web accessibles et supports print & digital.">
+        <meta name="author" content="Justine Thebault">
+
+        <!-- Balise Canonical -->
+        <link rel="canonical" href="https://justine-tblt.github.io/portfolio/">
+
+        <!-- Open Graph (Réseaux sociaux) -->
+        <meta property="og:title" content="Justine Thebault - Designer et développeuse web">
+        <meta property="og:description"
+            content="Logos • Chartes graphiques • Sites web accessibles • Supports print & digital">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://justine-tblt.github.io/portfolio/">
+        <meta property="og:image" content="https://justine-tblt.github.io/portfolio/img/logo.jpg">
+
+        <title>Justine Thebault - Designer et développeuse web</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&family=Lato:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <!-- Données structurées JSON-LD -->
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Justine Thebault",
+      "jobTitle": "Designer graphique & Développeuse web freelance",
+      "description": "Création d'identités visuelles, logos, chartes graphiques et sites web accessibles.",
+      "url": "https://justine-tblt.github.io/portfolio/",
+      "image": "https://justine-tblt.github.io/portfolio/img/logo.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Île-de-France",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        "Île-de-France",
+        "France",
+        "Maroc"
+      ],
+      "priceRange": "65€ - 890€",
+      "knowsAbout": [
+        "Design graphique",
+        "Développement web",
+        "Accessibilité web",
+        "Identité visuelle",
+        "UI/UX Design"
+      ]
+    }
+    </script>
+
+        <link rel="icon" type="image/png" href="img/favicon.png">
+    </head>
+
+    <style>
+        /* ===== VARIABLES CSS ===== */
+        :root {
+            --white: #f7f7f5;
+            --black: #252a2f;
+            --blue: #2d69e1;
+            --primary-pastel: var(--white);
+            --secondary-pastel: #e9eef8;
+            --accent-rose: var(--blue);
+            --accent-blue: var(--blue);
+            --accent-green: var(--blue);
+            --accent-yellow: var(--blue);
+            --text-dark: #2d2d3d;
+            --text-light: #6d6d7d;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+
+            --font-display: "Outfit", sans-serif;
+            --font-body: "Lato", sans-serif;
+
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            background: white;
+            color: var(--accent-blue);
+            padding: 12px 20px;
+            z-index: 9999;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0 0 4px 0;
+            transition: top 0.2s ease;
+        }
+
+        /* Fait apparaître le lien au sommet de l'écran lorsqu'il reçoit le focus (touche Tab) */
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .outfit-uniquifier {
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        .unkempt-regular {
+            font-family: "Unkempt", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .unkempt-bold {
+            font-family: "Unkempt", cursive;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+
+        .lato-thin {
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        .lato-light {
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .lato-regular {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .lato-bold {
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .lato-black {
+            font-family: "Lato", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .lato-thin-italic {
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        .lato-light-italic {
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .lato-regular-italic {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .lato-bold-italic {
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .lato-black-italic {
+            font-family: "Lato", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background: var(--white);
+            line-height: 1.7;
+        }
+
+        /* ===== ACCESSIBILITÉ ===== */
+
+        a:focus,
+        button:focus,
+        input:focus,
+        textarea:focus {
+            outline: 3px solid var(--accent-rose);
+            outline-offset: 2px;
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--accent-rose);
+            outline-offset: 2px;
+        }
+
+        /* ===== TYPOGRAPHIE ===== */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-display);
+            color: var(--text-dark);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 3.5rem);
+            margin-bottom: var(--spacing-md);
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        p {
+            color: var(--text-light);
+            font-size: 1.0625rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        /* ===== CONTENEURS ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .section {
+            padding: var(--spacing-2xl) 0;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+            z-index: 50;
+            border-bottom: 2px solid var(--primary-pastel);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-md) 0;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--accent-rose);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-dark);
+        }
+
+        /* ===== BOUTONS ===== */
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-family: var(--font-body);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-rose), var(--accent-blue));
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(244, 166, 193, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(244, 166, 193, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent-rose);
+            border: 2px solid var(--accent-rose);
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent-rose);
+            color: var(--white);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-pastel) 0%, var(--secondary-pastel) 100%);
+            padding: var(--spacing-2xl) 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(244, 166, 193, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(125, 211, 232, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: var(--text-dark);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .hero .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: var(--spacing-lg);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===== ÉTOILES HERO ===== */
+        .hero-stars {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero-stars .star {
+            position: absolute;
+            background: var(--text-dark);
+            border-radius: 50%;
+            opacity: 0.5;
+            animation: twinkle 3s ease-in-out infinite;
+        }
+
+        .hero-stars .shooting-star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--white);
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 12px 2px rgba(255, 255, 255, 0.9);
+            opacity: 0;
+            animation-name: shooting;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+
+        .hero-stars .shooting-star::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 90px;
+            height: 1px;
+            transform: translateY(-50%);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.8), transparent);
+        }
+
+        .hero-stars.paused .star,
+        .hero-stars.paused .shooting-star {
+            animation-play-state: paused;
+        }
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                opacity: 0.15;
+                transform: scale(0.8);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.15);
+            }
+        }
+
+        @keyframes shooting {
+            0% {
+                opacity: 0;
+                transform: translate(0, 0) rotate(140deg);
+            }
+
+            5% {
+                opacity: 1;
+            }
+
+            20% {
+                opacity: 0;
+                transform: translate(-260px, 200px) rotate(140deg);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-260px, 200px) rotate(140deg);
+            }
+        }
+
+        .stars-toggle {
+            position: absolute;
+            top: var(--spacing-md);
+            right: var(--spacing-md);
+            z-index: 2;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 2px solid rgba(45, 45, 61, 0.15);
+            background: rgba(255, 255, 255, 0.7);
+            color: var(--text-dark);
+            font-size: 0.95rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .stars-toggle:hover {
+            background: var(--white);
+            border-color: var(--accent-rose);
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: var(--spacing-lg);
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-rose), var(--accent-blue));
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+            border-color: var(--accent-rose);
+        }
+
+        .service-icon img {
+            margin-bottom: var(--spacing-md);
+            display: block;
+            width: 100px;
+        }
+
+        .service-card h3 {
+            background: linear-gradient(135deg, var(--accent-rose), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .service-price {
+            display: inline-block;
+            margin-top: var(--spacing-sm);
+            color: var(--accent-blue);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .service-price span {
+            color: var(--text-light);
+            font-weight: 400;
+            font-size: 0.8rem;
+        }
+
+        .service-card-featured {
+            border: 2px solid #fcbf1c;
+            transform: none;
+            grid-column: 1 / -1;
+
+
+        }
+
+        .service-card-featured::before {
+            background: linear-gradient(90deg, #fcbf1c);
+            height: 6px;
+        }
+
+        .service-card-featured:hover {
+            transform: translateY(-8px);
+            border-color: #fcbf1c;
+        }
+
+        .service-card-featured h3 {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-card-featured p {
+            color: var(--text-light);
+        }
+
+        .service-badge {
+            position: absolute;
+            top: var(--spacing-md);
+            right: -2.5rem;
+            transform: rotate(45deg);
+            background: var(--accent-yellow);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .service-price-featured {
+            color: var(--accent-blue);
+        }
+
+        @media (max-width: 900px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .service-card-featured {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card-featured {
+                grid-column: auto;
+                transform: scale(1);
+            }
+
+            .service-card-featured:hover {
+                transform: translateY(-8px);
+            }
+        }
+
+        /* ===== PORTFOLIO SECTION ===== */
+        .portfolio-intro {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .portfolio-intro p {
+            color: var(--text-dark);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            aspect-ratio: 1;
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .portfolio-item-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(45, 45, 61, 0.9) 100%);
+            padding: var(--spacing-md);
+            color: var(--white);
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-item-overlay {
+            transform: translateY(0);
+        }
+
+        .portfolio-item-overlay h3 {
+            color: var(--white);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* ===== À PROPOS ===== */
+        .about-section {
+            background: linear-gradient(135deg, var(--secondary-pastel) 0%, var(--primary-pastel) 100%);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        .about-text h2 {
+            margin-top: 0;
+        }
+
+        .about-text p {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .about-highlight {
+            background: var(--white);
+            padding: var(--spacing-lg);
+            border-radius: 12px;
+            margin-top: var(--spacing-lg);
+            border-left: 4px solid var(--accent-rose);
+        }
+
+        .about-image img {
+            position: relative;
+            width: 500px;
+            height: 350px;
+        }
+
+
+        /* ===== LOCALISATION ===== */
+        .service-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+
+        .area-card {
+            background: var(--white);
+            padding: var(--spacing-lg);
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .area-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .area-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+            display: block;
+        }
+
+        .area-card h3 {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .area-card p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* ===== FORMULAIRE CONTACT ===== */
+
+        .img_send {
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .contact-section {
+            background: var(--primary-pastel);
+        }
+
+        .contact-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: var(--spacing-xl);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.875rem var(--spacing-sm);
+            border: 2px solid #e8e8e8;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: var(--white);
+            color: var(--text-dark);
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: var(--accent-rose);
+            background: rgba(244, 166, 193, 0.05);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .form-message {
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin-bottom: var(--spacing-lg);
+            display: none;
+            font-weight: 500;
+        }
+
+        .form-message.success {
+            background: rgba(168, 213, 168, 0.2);
+            color: #2d6b2d;
+            border-left: 4px solid var(--accent-green);
+            display: block;
+        }
+
+        .form-message.error {
+            background: rgba(244, 166, 193, 0.2);
+            color: #8b3a5c;
+            border-left: 4px solid var(--accent-rose);
+            display: block;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: var(--spacing-xl) 0 var(--spacing-lg);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .footer-section h3 {
+            color: var(--white);
+            margin-bottom: var(--spacing-md);
+            font-size: 1rem;
+        }
+
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-rose);
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-md);
+            list-style: none;
+            margin-top: var(--spacing-md);
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(244, 166, 193, 0.2);
+            border-radius: 50%;
+            font-weight: 600;
+        }
+
+        .social-links a:hover {
+            background: var(--accent-rose);
+            color: var(--white);
+        }
+
+        .footer-bottom p {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: var(--spacing-lg);
+            text-align: center;
+            color: #a2a2a9;
+            font-size: 0.9rem;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                padding: var(--spacing-lg);
+                box-shadow: var(--shadow);
+                border-bottom: 2px solid var(--primary-pastel);
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: var(--spacing-md);
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+
+            .about-image-placeholder {
+                height: 80px;
+            }
+
+            .service-areas {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                display: none;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+            :root {
+                --spacing-2xl: 2.5rem;
+                --spacing-xl: 2rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                padding: var(--spacing-xl) 0;
+            }
+
+            .container {
+                padding: 0 var(--spacing-sm);
+            }
+
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+        <div class="container">
+            <div class="header-content">
+                <img src="img/logo.jpg" alt="" class="logo" loading="lazy">
+
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu de navigation"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-stars" id="hero-stars" aria-hidden="true"></div>
+            <button type="button" class="stars-toggle" id="stars-toggle" aria-pressed="false"
+                aria-label="Mettre en pause l'animation des étoiles">⏸</button>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Justine Thebault</h1>
+                    <p class="subtitle">Je conçois et développe des identités visuelles et des sites web accessibles qui
+                        convertissent vos visiteurs en clients</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Démarrer un projet</a>
+                        <a href="#portfolio" class="btn btn-secondary">Voir le portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: var(--spacing-md);">Mes Services</h2>
+                <p
+                    style="text-align: center; color: var(--text-light); max-width: 600px; margin-left: auto; margin-right: auto; margin-bottom: var(--spacing-xl);">
+                    Création graphique et solutions digitales adaptées à votre identité et vos objectifs
+                </p>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <span class="service-icon" aria-hidden="true"><img src="img/print.png" alt=""
+                                loading="lazy"></span>
+                        <h3>Supports imprimés et digitaux</h3>
+                        <p>Conception de flyers, affiches, bannières, cartes de visite et supports de
+                            communication pour tous formats. Designs optimisés pour l'impression et le digital.</p>
+                        <span class="service-price">À partir de 65€</span>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-icon" aria-hidden="true"><img src="img/identitevisuelle.png" alt=""
+                                loading="lazy"></span>
+                        <h3>Logos et chartes graphiques</h3>
+                        <p>Design d'identité visuelle cohérente et mémorable. Création de logos, chartes
+                            graphiques complètes avec couleurs, typographies et directives d'utilisation.</p>
+                        <span class="service-price">À partir de 190€</span>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-icon" aria-hidden="true"><img src="img/web.png" alt=""
+                                loading="lazy"></span>
+                        <h3>Sites internet</h3>
+                        <p>Design et développement de sites responsives, accessibles et SEO-friendly.
+                            Création sur-mesure ou site clé en main.</p>
+                        <span class="service-price">À partir de 690€</span>
+                    </article>
+
+                    <article class="service-card service-card-featured">
+                        <span class="service-badge">Le plus complet</span>
+                        <span class="service-icon" aria-hidden="true"><img src="img/allpackages.png" alt=""
+                                loading="lazy"></span>
+                        <h3>Formule tout compris</h3>
+                        <p>Logo, charte graphique, supports multicanaux et site web accessible : votre identité
+                            visuelle complète, pensée et cohérente du premier coup d'œil au dernier clic. <br> Vous
+                            économisez du temps, vous optimisez votre budget et vous obtenez une cohérence visuelle
+                            parfaite sur tous vos canaux de vente.
+                        </p>
+                        <span class="service-price service-price-featured">À partir de 890€</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="section" style="background: var(--secondary-pastel);">
+            <div class="container">
+                <div class="portfolio-intro">
+                    <h2>Portfolio</h2>
+                    <p>Découvrez une sélection de projets réalisés pour mes clients</p>
+                </div>
+
+                <div class="portfolio-grid">
+
+                    <!-- <article class="portfolio-item">
+                        <img src="img/site_ceriz.jpg" alt="Ceriz sur le gato - Site e-commerce">
+                        <div class="portfolio-item-overlay">
+                            <h3>Site E-commerce</h3>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item">
+                        <img src="img/site_emilie.jpg" alt="Portfolio Graphiste">
+                        <div class="portfolio-item-overlay">
+                            <h3>Site Portfolio</h3>
+                        </div>
+                    </article> -->
+
+
+
+                    <!-- <article class="portfolio-item">
+                        <img src="img/aux_3_petits_cochons.jpg" alt="Aux 3 Petits Cochons - Logo">
+                        <div class="portfolio-item-overlay">
+                            <h3>Logo Identité</h3>
+                        </div>
+                    </article> -->
+
+                    <article class="portfolio-item">
+                        <img src="img/cafe_montaigne.jpg" alt="Café Montaigne - Branding" loading="lazy">
+                        <div class="portfolio-item-overlay">
+                            <h3>Branding Café</h3>
+                        </div>
+                    </article>
+                    <article class="portfolio-item">
+                        <img src="img/web_surf.png" alt="Site de surf au maroc" loading="lazy">
+                        <div class="portfolio-item-overlay">
+                            <h3>Site vitrine</h3>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item">
+                        <img src="img/cdv_fce.jpg" alt="Cartes de visite Femmes Cheffes d'entreprise 77" loading="lazy">
+                        <div class="portfolio-item-overlay">
+                            <h3>Cartes de visite</h3>
+                        </div>
+                    </article>
+
+
+                    <!-- <article class="portfolio-item">
+                        <img src="img/florida-site.jpg" alt="Florida Coiffure - Site Web">
+                        <div class="portfolio-item-overlay">
+                            <h3>Site Web</h3>
+                        </div>
+                    </article> -->
+
+                    <article class="portfolio-item">
+                        <img src="img/flyers-projelec77.jpg" alt="Flyers Projelec77 électricien" loading="lazy">
+                        <div class="portfolio-item-overlay">
+                            <h3>Flyers</h3>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item">
+                        <img src="img/egora.jpg" alt="École Egora - Design Communication" loading="lazy">
+                        <div class="portfolio-item-overlay">
+                            <h3>Communication</h3>
+                        </div>
+                    </article>
+
+
+                    <!-- <article class="portfolio-item">
+                        <img src="img/newsletter.jpg" alt="Newsletter Design">
+                        <div class="portfolio-item-overlay">
+                            <h3>Newsletter</h3>
+                        </div>
+                    </article> -->
+
+
+
+                    <article class="portfolio-item">
+                        <img src="img/a_fleur_de_pot.jpg" alt="À Fleur de Pot - Logo et enseigne" loading="lazy">
+                        <div class="portfolio-item-overlay">
+                            <h3>Logo & enseigne</h3>
+                        </div>
+                    </article>
+                    <article class="portfolio-item">
+                        <img src="img/site_booking.png" alt="Site Hôtel luxe" loading="lazy">
+                        <div class="portfolio-item-overlay">
+                            <h3>Site de réservation</h3>
+                        </div>
+                    </article>
+                    <!-- <article class="portfolio-item">
+                        <img src="img/affiche-bourget.jpg" alt="Affiche Nuit des Étoiles au Bourget" loading="lazy">
+                        <div class="portfolio-item-overlay">
+                            <h3>Affiche événement</h3>
+                        </div>
+                    </article> -->
+
+                    <article class="portfolio-item">
+                        <img src="img/flyer_fft.png" alt="Flyer Fédération française de Tennis" loading="lazy">
+                        <div class="portfolio-item-overlay">
+                            <h3>Affiche événement</h3>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- À PROPOS -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>À propos</h2>
+                        <p>Hello ! Moi c'est Justine, designer graphique et développeuse web.</p>
+
+                        <p>Depuis 3 ans, je crée des identités visuelles, des sites web et des supports print et
+                            numériques, tout en aidant mes clients à structurer leur communication.</p>
+
+                        <p>Je porte une attention particulière à l'expérience utilisateur, à l'accessibilité et aux
+                            bonnes pratiques du web. <br>Selon les besoins, je peux également accompagner la mise en
+                            conformité de sites selon le Référentiel général d’amélioration de l’accessibilité.</p>
+
+                        <div class="about-highlight">
+                            <strong>🎯 Mon approche :</strong> Transformer vos idées en designs impactants, accessibles
+                            et pérennes, adaptés à vos besoins et votre budget.
+                        </div>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="img/profil3.png" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <h2 style="text-align: center;">Vous avez un projet en tête ? Parlons-en !</h2>
+                    <!-- <p style="text-align: center; margin-bottom: var(--spacing-xl);">Vous avez un projet ? Parlons-en !</p> -->
+
+                    <p
+                        style="text-align: center; font-size: 0.9rem; color: var(--text-light); margin-bottom: var(--spacing-md);">
+                        Les champs marqués d'un <strong>*</strong> sont obligatoires.</p>
+
+                    <form class="contact-form" id="contact-form" method="POST" action="https://formspree.io/f/mppaleaz">
+                        <div class="form-message" id="form-message"></div>
+
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <input type="text" id="subject" name="subject" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget estimé (optionnel)</label>
+                            <input type="text" id="budget" name="budget" placeholder="ex: 500-1000€">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required aria-required="true"
+                                placeholder="Décrivez votre projet..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: var(--spacing-md);">
+                            Envoyer mon message
+                        </button>
+                        <p style="font-size: 0.85rem; text-align: center; color: var(--text-light); margin: 0;">
+                            Réponse généralement sous 24-48h
+                            <img src="img/send.png" alt="" class="img_send" loading="lazy">
+
+                        </p>
+                    </form>
+
+
+                    <div style="text-align: center;  padding-top:30px;">
+                        <p style="margin-bottom: var(--spacing-sm);"><strong>ou</strong></p>
+                        <!-- <p><a href="mailto:justine.thebault5@gmail.com"
+                                style="color: var(--accent-rose); text-decoration: none; font-weight: 600;">justine.thebault5@gmail.com</a>
+                        </p> -->
+                        <p><a href="https://wa.me/33627684278" target="_blank" rel="noopener noreferrer"
+                                style="color: var(--accent-rose); text-decoration: none; font-weight: 600;"><i
+                                    class="fa-brands fa-whatsapp"></i> Me
+                                contacter sur WhatsApp</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Justine Thebault</h3>
+                    <p>Spécialiste en communication print <br>& digitale en freelance</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p>Logos & chartes graphiques</p>
+                    <p>Supports imprimés & digitaux</p>
+                    <p>Sites internet</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact & réseaux</h3>
+                    <p><a href="mailto:justine.thebault5@gmail.com">justine.thebault5@gmail.com</a></p>
+                    <p><a href="https://wa.me/33627684278" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-whatsapp"></i> WhatsApp</a></p>
+                    <ul class="social-links">
+                        <li><a href="https://www.linkedin.com/in/justinethebault/" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://share.google/1bFE7Eo8ZZwSDJwvP" target="_blank" rel="noopener noreferrer"
+                                aria-label="Fiche Google"><i class="fa-brands fa-google"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025-2026 Justine Thebault. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Génération des étoiles du hero
+        const heroStars = document.getElementById('hero-stars');
+        if (heroStars) {
+            const STAR_COUNT = 60;
+            for (let i = 0; i < STAR_COUNT; i++) {
+                const star = document.createElement('span');
+                star.className = 'star';
+                const size = (Math.random() * 2.5 + 1).toFixed(1);
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.animationDuration = `${(Math.random() * 3 + 2).toFixed(1)}s`;
+                star.style.animationDelay = `${(Math.random() * 4).toFixed(1)}s`;
+                heroStars.appendChild(star);
+            }
+
+            const SHOOTING_STAR_COUNT = 4;
+            for (let i = 0; i < SHOOTING_STAR_COUNT; i++) {
+                const shootingStar = document.createElement('span');
+                shootingStar.className = 'shooting-star';
+                shootingStar.style.top = `${Math.random() * 50}%`;
+                shootingStar.style.left = `${50 + Math.random() * 45}%`;
+                shootingStar.style.animationDuration = `${(Math.random() * 2 + 4).toFixed(1)}s`;
+                shootingStar.style.animationDelay = `${(Math.random() * 6).toFixed(1)}s`;
+                heroStars.appendChild(shootingStar);
+            }
+        }
+
+        // Bouton pause/lecture animation étoiles
+        const starsToggle = document.getElementById('stars-toggle');
+        if (starsToggle && heroStars) {
+            starsToggle.addEventListener('click', () => {
+                const isPaused = heroStars.classList.toggle('paused');
+                starsToggle.textContent = isPaused ? '▶' : '⏸';
+                starsToggle.setAttribute('aria-pressed', isPaused);
+                starsToggle.setAttribute('aria-label', isPaused ? "Reprendre l'animation des étoiles" : "Mettre en pause l'animation des étoiles");
+            });
+        }
+
+        // Menu mobile toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mainNav = document.getElementById('main-nav');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isOpen = mainNav.classList.toggle('active');
+            mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Fermer le menu mobile quand on clique sur un lien
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Formulaire avec Formspree
+        const form = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    formMessage.textContent = '✅ Message envoyé avec succès ! Je vous répondrai rapidement.';
+                    formMessage.classList.add('success');
+                    form.reset();
+                    setTimeout(() => {
+                        formMessage.classList.remove('success');
+                    }, 5000);
+                } else {
+                    formMessage.textContent = '❌ Une erreur est survenue. Veuillez réessayer.';
+                    formMessage.classList.add('error');
+                }
+            } catch (error) {
+                formMessage.textContent = '❌ Erreur de connexion. Veuillez vérifier votre connexion.';
+                formMessage.classList.add('error');
+            }
+        });
+    </script>
+</body>
+
+</html>
